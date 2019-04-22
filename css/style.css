@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Playfair+Display");
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: rgb(15, 48, 66);
+  background-color: rgba(49, 49, 49);
+}
+
+header {
+  text-align: center;
+  image-orientation: center;
+}
+
+h1,
+h2,
+h3,
+h4, {
+  font-family: 'Merriweather', serif;
+}
+
+img{
+  border: 1px solid black;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgba(178, 185, 189);
+  padding: 16px;
+  border: 0 auto;
+}
+
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  grid-template-areas: 10px;
+  }
+
+  nav ul{
+    padding: 0;
+  }
+  nav a {
+    background: rgba(130, 146, 155);
+    color: #222;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 1s ease;
+  }
+
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  nav a:hover,
+  nav a.active,
+  nav a.visited
+   {
+    background: rgb(217, 241, 255);
+    color: #eee;
+  }
+  nav a.visited {
+    color: rbg(218, 243, 253);
+  }
+
+section{
+  padding-right: 40px;
+}
+  footer{
+    text-align: center;
+  }
