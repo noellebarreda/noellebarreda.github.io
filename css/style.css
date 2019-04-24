@@ -15,12 +15,8 @@ h4, {
   font-family: 'Merriweather', serif;
 }
 
-#wrapper {
-  img{
-    border: 1px solid black;
-  }
 
-  .wrapper {
+#wrapper {
     width: 960px;
     margin: 0 auto;
     background-color: rgba(178, 185, 189);
@@ -54,7 +50,7 @@ h4, {
       list-style-type: none;
       display: inline-block;
     }
-    
+
     nav a:hover,
     nav a.active,
     nav a.visited,
