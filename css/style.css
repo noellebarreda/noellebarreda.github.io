@@ -1,67 +1,72 @@
-body {
-  color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0);
+@import url('https://fonts.googleapis.com/css?family=Barlow|Julius+Sans+One');
+
+h1, h2, h3, h4{
+  font-family: "Julius Sans One", sans-serif;
 }
 
-header {
-  text-align: center;
-  image-orientation: center;
+h1{
+  align-content: center;
 }
 
-h1,
-h2,
-h3,
-h4, {
-  font-family: 'Merriweather', serif;
+p, nav, ul {
+  font-family: "Barlow", sans-serif;
+}
+body p{
+  font-color: rgb(0, 0, 0);
+}
+body{
+  color: #222;
 }
 
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
 
-#wrapper {
-    width: 960px;
+
+}
+
+nav li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited{
+  color: rgb(83, 121, 143);
+}
+
+a:hover{
+  color: rgb(114, 114, 114)
+}
+
+.wrapper {
+    max-width: 960px;
     margin: 0 auto;
-    background-color: rgba(178, 185, 189);
-    padding: 16px;
-    border: 0 auto;
+    padding: 10px;
+    background-color: #eee;
   }
 
-  #main {
-    main{
-      display: grid;
-      grid-template-columns: 330px 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 16px;
-      grid-template-areas: 10px;
-    }
+.videos{
+  max-width:700px;
+  margin:0 auto;
+  padding:10px;
+}
 
-    nav ul{
-      padding: 0;
-    }
-    nav a {
-      display: inline;
-      background: rgba(130, 146, 155);
-      color: #222;
-      padding: 5px;
-      padding-right: 20px;
-      text-decoration: none;
-      transition: all 1s ease;
-    }
+#photo{
+  grid-area: photo;
+}
 
-    nav ul li{
-      list-style-type: none;
-      display: inline-block;
-    }
+#about{
+  grid-area: about;
+}
 
-    nav a:hover,
-    nav a.active,
-    nav a.visited,
-    h4, {
-      nav a.visited {
-        color: rbg(218, 243, 253);
-      }
-
-      section{
-        padding-right: 40px;
-      }
-      footer{
-        text-align: center;
-      }
+.grid-one{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 20px;
+  grid-template-areas:
+  "about photo"
+}
