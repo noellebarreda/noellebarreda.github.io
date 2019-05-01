@@ -28,7 +28,7 @@ nav li{
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
   color: rgb(50, 59, 64);
 }
 a:visited{
@@ -104,6 +104,9 @@ a:hover{
 #languages h2{
   grid-area: languages;
   margin-top: 50px;
+}
+#languages p{
+  margin-bottom: 50px;
 }
 #contactme p{
   margin-bottom: 10px;
