@@ -11,9 +11,7 @@ h1{
 p, nav, ul {
   font-family: "Barlow", sans-serif;
 }
-body p{
-  font-color: rgb(0, 0, 0);
-}
+
 body{
   color: #222;
 }
@@ -21,7 +19,6 @@ body{
 nav ul {
   list-style-type: none;
   padding-left: 0;
-
 
 }
 
@@ -31,7 +28,8 @@ nav li{
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none
+  color: rgb(50, 59, 64);
 }
 a:visited{
   color: rgb(83, 121, 143);
@@ -42,16 +40,19 @@ a:hover{
 }
 
 .wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #eee;
-  }
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #eee;
+}
 
-.videos{
+#videos{
   max-width:700px;
   margin:0 auto;
   padding:10px;
+}
+#videos p{
+  margin-bottom: 100px;
 }
 
 #photo{
@@ -69,4 +70,41 @@ a:hover{
   grid-gap: 20px;
   grid-template-areas:
   "about photo"
+}
+
+#education h4, p{
+  grid-area: education;
+  margin:0;
+}
+
+#education h3{
+  margin-bottom: 1px;
+}
+#education h2{
+  margin-top: 50px;
+}
+#skills h2{
+  grid-area: skills;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+#skills ul{
+  margin-bottom: 50px;
+}
+#experience p{
+  grid-area: experience;
+  margin: 0px;
+}
+#experience h4{
+  margin-bottom: 7px;
+}
+#experience h3{
+  margin-top: 30px;
+}
+#languages h2{
+  grid-area: languages;
+  margin-top: 50px;
+}
+#contactme p{
+  margin-bottom: 10px;
 }
